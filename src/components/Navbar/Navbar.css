@@ -1,0 +1,117 @@
+.app__navbar {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--light-color);
+  padding: 0em 2rem;
+}
+
+.app__navbar-logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.app__navbar-logo img {
+  width: auto;
+  margin: 0 2em;
+  height: 8vh;
+}
+
+.app__navbar-links {
+  flex: 1;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  list-style: none;
+  margin-right: 2em;
+}
+
+.app__navbar-links li {
+  margin: 0 1rem;
+  cursor: pointer;
+  color: var(--text-color);
+}
+
+.app__navbar-links li a:hover {
+  border-bottom: 1px solid var(--accent-color);
+}
+  
+.app__navbar-smallscreen {
+  display: none;
+}
+
+.app__navbar-smallscreen_overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: var(--bg-color);
+  transition: 0.5s ease;
+  flex-direction: column;
+  z-index: 5;
+}
+
+.app__navbar-smallscreen_overlay .overlay__close {
+  font-size: 27px;
+  color: var(--text-color);
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.app__navbar-smallscreen_overlay .overlay__close:hover {
+  color: var(--accent-color);
+  transform: rotateZ(180deg);
+}
+
+.app__navbar-smallscreen_links {
+  list-style: none;
+}
+.app__navbar-smallscreen_links li {
+  margin: 2rem;
+  cursor: pointer;
+  color: var(--text-color);
+  font-size: 2rem;
+  text-align: center;
+  font-family: var(--font-base);
+  border-radius: 8px;
+  padding: 0 1em;
+}
+
+.app__navbar-smallscreen_links li:hover {
+  color: var(--bg-color);
+  background-color: rgba(151, 33, 60, 0.6);
+  box-shadow: 2px 2px 15px var(--accent-color);
+}
+/* Responsive Device */
+
+@media screen and (max-width: 2000px) {
+  .app__navbar-logo img {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .app__navbar-links {
+    display: none;
+  }  
+
+  .app__navbar-smallscreen {
+    display: flex;
+    margin-right: 1em;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .app__navbar-logo img{
+    height: 6vh;
+  }
+}

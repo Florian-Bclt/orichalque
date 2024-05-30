@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --font-base: 'Open Sans', sans-serif;
+  --bg-color: #f2e9e9;
+  --light-color: #fff;
+  --text-color: #180202;
+  --primary-color: #14496c;
+  --secondary-color: #2a2927;
+  --accent-color: #97213c;
+  --transition: all 400ms ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15%;
+}
+
+/* Font template */
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 4em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.5em;
+  font-weight: 600
+}
+
+h3 {
+  font-size: 1.5em;
+  color: var(--second-color);
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1em;
+  font-weight: 600;
+}
+
+p, li {
+  font-size: 1.25em;
+  line-height: 28px;
+  font-weight: 300;
+}
+
+.font__base {
+  font-family: var(--font-base);
+  letter-spacing: 0.04em;
+}
