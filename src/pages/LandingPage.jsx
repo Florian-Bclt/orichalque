@@ -4,6 +4,8 @@ import './LandingPage.css';
 import Navbar from '../components/Navbar/Navbar';
 import Promobar from '../components/promobar/Promobar';
 import HeroSection from '../components/HeroSection/HeroSection';
+import ProductsCarousel from './Products';
+import Services from './Services'
 
 const LandingPage = () => {
   return (
@@ -11,6 +13,8 @@ const LandingPage = () => {
       <Navbar />
       <Promobar />
       <HeroSection />
+      <ProductsCarousel />
+      <Services />
     </div>
   );
 };

@@ -1,4 +1,3 @@
-/* Styles généraux pour HeroSection */
 .app__hero-section {
   position: relative;
   height: 80vh;
@@ -6,6 +5,7 @@
   justify-content: center;
   align-items: center;
   color: var(--light-color);
+  width: 100vw;
 }
 
 .app__video {
@@ -33,16 +33,23 @@
   display: flex;
   flex-direction: column;
   justify-content: end;
-  align-items: center;
+  align-items: left;
 }
 
 .CTA {
   z-index: 1;
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  width: 40%;
+  margin: 1em auto;
 }
 
 .CTA h1, .CTA h2, .CTA h3 {
   margin: 0.1em 0;
+  font-size: 3em;
 }
 
 .CTA button {
@@ -56,13 +63,17 @@
   color: var(--secondary-color);
   cursor: pointer;
   font-size: 1em;
+  font-weight: 600;
+  box-shadow: inset 1px 1px 20px var(--primary-color);
 }
 
 .CTA button:hover {
   background-color: var(--secondary-color);
-  color: var(--accent-color);
+  color: var(--bg-color);
   border: 1px solid var(--accent-color);
   transition: var(--transition);
+  box-shadow: inset 1px 1px 20px var(--accent-color);
+  font-weight: 700;
 }
 
 .app__video-overlay_circle {
@@ -82,4 +93,37 @@
 
 .app__video-overlay_circle > svg {
   margin: 0.35em;
+}
+
+/* Responsive device */
+
+@media screen and (max-width: 1150px) {
+  .CTA {
+    z-index: 1;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    width: 90%;
+    margin: 1em auto;
+  }
+
+  .CTA h1, .CTA h2, .CTA h3 {
+    margin: 0.1em 0;
+    font-size: 2em;
+  }
+
+  .CTA button {
+    margin: 1.5em 0;
+    padding: 0.5em 1em;
+    width: 10em;
+    height: 3em;
+    background-color: var(--bg-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 25px;
+    color: var(--secondary-color);
+    cursor: pointer;
+    font-size: 1em;
+  }
 }
