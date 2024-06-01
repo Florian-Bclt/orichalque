@@ -50,6 +50,7 @@
 .container__card .content > img {
   height: 80%;
   max-width: 95%;
+  border-radius: 8px;
 }
 
 
@@ -71,6 +72,10 @@
   height: 80%;
   text-align: center;
   font-size: 18px;
+}
+
+.container__card .content > h5 {
+  padding: 0 1em;
 }
 
 .swiper-pagination-bullet {

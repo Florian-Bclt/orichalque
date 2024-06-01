@@ -17,7 +17,7 @@ const HeroSection = () => {
   };
 
   return (
-    <div className='app__hero-section font__base'>
+    <div className='app__hero-section font__base' id='hero-section'>
       <div className="app__video">
         <video
           src={video.heroVideo}

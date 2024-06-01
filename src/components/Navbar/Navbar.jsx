@@ -14,10 +14,10 @@ const Navbar = () => {
             L'Orichalque Mangas
         </div>
         <ul className="app__navbar-links">
-            <li className="font__base"><a href='/'>Accueil</a></li>
-            <li className="font__base"><a href='/products'>Produits</a></li>
-            <li className="font__base"><a href='/services'>Services</a></li>
-            <li className="font__base"><a href='/find-us'>Nous trouver</a></li>
+            <li className="font__base"><a href='#promobar'>Accueil</a></li>
+            <li className="font__base"><a href='#products'>Produits</a></li>
+            <li className="font__base"><a href='#services'>Services</a></li>
+            <li className="font__base"><a href='#find-us'>Nous trouver</a></li>
         </ul>
 
 
@@ -30,10 +30,10 @@ const Navbar = () => {
                 <div className='app__navbar-smallscreen_overlay'>
                     <RxCross2 fontSize={27} className='overlay__close' onClick={() => setToggleMenu(false)} />
                     <ul className='app__navbar-smallscreen_links'>
-                      <li className="font__base"><a href='/'>Accueil</a></li>
-                      <li className="font__base"><a href='/products'>Produits</a></li>
-                      <li className="font__base"><a href='/services'>Services</a></li>
-                      <li className="font__base"><a href='/find-us'>Nous trouver</a></li>
+                      <li className="font__base"><a href='#promobar'>Accueil</a></li>
+                      <li className="font__base"><a href='#products'>Produits</a></li>
+                      <li className="font__base"><a href='#services'>Services</a></li>
+                      <li className="font__base"><a href='#find-us'>Nous trouver</a></li>
                     </ul>
                 </div>
             )}

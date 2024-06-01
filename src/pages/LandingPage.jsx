@@ -6,6 +6,8 @@ import Promobar from '../components/promobar/Promobar';
 import HeroSection from '../components/HeroSection/HeroSection';
 import ProductsCarousel from './Products';
 import Services from './Services'
+import FindUs from '../components/FindUs/FindUs';
+import Footer from '../components/Footer/Footer';
 
 const LandingPage = () => {
   return (
@@ -15,6 +17,8 @@ const LandingPage = () => {
       <HeroSection />
       <ProductsCarousel />
       <Services />
+      <FindUs />
+      <Footer />
     </div>
   );
 };

@@ -1,0 +1,93 @@
+.findUs__container {
+  background-color: var(--bg-color);
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.findUs__container > img {
+  width: 40em;
+  margin: 2em;
+  border-radius: 8px;
+}
+
+.hours {
+  width: 40em;
+  margin-bottom: 2em;
+}
+.hours > p {
+  margin-top: 1em;
+  text-align: left;
+}
+
+.hours > p > span {
+  font-weight: 600;
+}
+
+.event {
+  font-style: italic;
+  color: var(--accent-color);
+}
+
+.event > svg {
+  position: relative;
+  top: 3px;
+}
+
+.adress {
+  display: flex;
+  flex-direction: column;
+  width: 40em;
+}
+
+.adress > a {
+  margin-top: 1em;
+  text-align: left;
+}
+
+.adress > iframe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1em auto;
+  border: none;
+  border-radius: 8px;
+  width: 600px;
+  height: 300px;
+}
+
+@media screen and (max-width: 1150px) {
+  .findUs__container > img {
+    width: 20em;
+    margin: 2em;
+    border-radius: 8px;
+  }
+
+  .findUs__container h2 {
+    font-size: 2em;
+  }
+
+  .findUs__container p {
+    font-size: 1em;
+  }
+
+  .hours {
+    width: 25em;
+  }
+
+  .hours > p {
+    padding: 0 1em;
+  }
+
+
+  .adress {
+    width: 20em;
+  }
+
+  .adress > iframe {
+    width: 300px;
+    height: 200px;
+  }
+}

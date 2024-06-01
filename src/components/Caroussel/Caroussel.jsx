@@ -55,7 +55,7 @@ const Caroussel = () => {
                 <div className="content">
                   <img src={images.mangas} alt="Mangas" />  
                   <h3>Mangas</h3>
-                  <h5>Une large séléction rien que pour vous</h5>
+                  <h5>Une large collection rien que pour vous</h5>
                 </div>
             </div>
           </SwiperSlide>
@@ -64,7 +64,7 @@ const Caroussel = () => {
               <div className="content">
                 <img src={images.yugi} alt="Yugi" />
                 <h3>Cartes à jouer</h3>
-                <h5>Retrouvez tous les accessoires nécessaires</h5>
+                <h5>Retrouvez tous les accessoires et boosters</h5>
               </div>
             </div>
           </SwiperSlide>
