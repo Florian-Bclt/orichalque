@@ -2,6 +2,7 @@
 
 /* Styles de base pour le container */
 .container__card {
+  width: 20em;
   position: relative;
   display: flex;
   flex-direction: column;

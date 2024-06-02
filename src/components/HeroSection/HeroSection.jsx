@@ -20,7 +20,7 @@ const HeroSection = () => {
     <div className='app__hero-section font__base' id='hero-section'>
       <div className="app__video">
         <video
-          src={video.heroVideo}
+          src={video.herovideo}
           ref={videoRef}
           type='video/mp4'
           loop
@@ -32,7 +32,7 @@ const HeroSection = () => {
             <h2>Boutique de jeux</h2>
             <h1>L'Orichalque Mangas</h1>
             <h3>La passion du jeu</h3>
-            <button>Découvrir</button>
+            <button><a href="#services">Découvrir</a></button>
           </div>
           <div className="app__video-overlay_circle" onClick={handleVideo}>
             {playVideo 

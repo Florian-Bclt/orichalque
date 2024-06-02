@@ -7,7 +7,7 @@ const FindUs = () => {
   return (
     <div className='container font__base' id='find-us'>
       <div className="findUs__container">
-        <img src={images.devanture} alt="Devanture de la boutique" />
+        <img src={images.boutique} alt="Visuel de la boutique" />
         <div className="hours">
           <h2>Horaires</h2>
           <p><span>Mardi au Samedi :</span> 9:30 - 13:00 / 14:30 - 19:30</p>

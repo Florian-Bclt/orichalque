@@ -1,4 +1,3 @@
-// LandingPage.jsx
 import React from 'react';
 import './LandingPage.css';
 import Navbar from '../components/Navbar/Navbar';
@@ -12,13 +11,13 @@ import Footer from '../components/Footer/Footer';
 const LandingPage = () => {
   return (
     <div className="container">
-      <Navbar />
-      <Promobar />
-      <HeroSection />
-      <ProductsCarousel />
-      <Services />
-      <FindUs />
-      <Footer />
+        <Navbar />
+        <Promobar />
+        <HeroSection />
+        <ProductsCarousel />
+        <Services />
+        <FindUs />
+        <Footer />
     </div>
   );
 };

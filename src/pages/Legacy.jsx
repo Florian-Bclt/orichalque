@@ -1,11 +1,11 @@
 import React from 'react'
-import Navbar from '../components/Navbar/Navbar'
+import GlobalNavbar from '../components/Navbar/GlobalNavbar'
 import './Legacy.css'
 
 const Legacy = () => {
   return (
     <div className='container font__base'>
-      <Navbar />
+      <GlobalNavbar />
       <div className="legacy__container">
         <h1>Mentions légales</h1>
         <div className="legacy__container-subtitle">

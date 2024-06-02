@@ -23,6 +23,7 @@ const Footer = () => {
           </div>
         </div>
         <h5>Tous droits réservés <FaRegCopyright /> 2024 - L'Orichalque Mangas</h5>
+        <a href="https://boucletflorian.com">Créé par Bouclet Florian<img src={images.logoFlo} alt="Logo entreprise Bouclet Florian" /></a>
       </div>
     </div>
   )
