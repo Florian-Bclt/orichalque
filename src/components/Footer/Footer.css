@@ -51,6 +51,11 @@
   padding: 0.2em;
 }
 
+.informations .social__medias > a:hover {
+  font-size: 2.2em;
+  transition: var(--transition);
+}
+
 .informations .social__medias > a:nth-child(1) {
   color : #6440a5;
 }
@@ -60,6 +65,10 @@
 .informations .social__medias > a:nth-child(3) {
   color : #d32222;
   font-size: 2.5em;
+}
+
+.informations .social__medias > a:nth-child(3):hover {
+  font-size: 2.6em;
 }
 
 .informations .legacy {

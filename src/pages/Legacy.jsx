@@ -1,6 +1,7 @@
 import React from 'react'
 import GlobalNavbar from '../components/Navbar/GlobalNavbar'
 import './Legacy.css'
+import Footer from '../components/Footer/Footer'
 
 const Legacy = () => {
   return (
@@ -24,6 +25,7 @@ const Legacy = () => {
           <p>La structure générale du site, ainsi que les textes, graphiques, images, sons et vidéos la composant, sont la propriété de Bouclet Florian. Toute représentation et/ou reproduction et/ou exploitation partielle ou totale de ce site, par quelque procédé que ce soit, sans l'autorisation préalable et par écrit de Bouclet Florian est strictement interdite et serait susceptible de constituer une contrefaçon au sens des articles L 335-2 et suivants du Code de la propriété intellectuelle.</p>
         </div>
       </div>
+      <Footer />
     </div>
   )
 }

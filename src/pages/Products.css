@@ -1,5 +1,31 @@
 .products {
   width: 100vw;
-  height: 100vh;
+  height: 105vh;
   background-color: var(--bg-color);
+}
+
+#products {
+  height: max-content;
+}
+
+#products-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--text-color);
+  border-radius: 20px;
+  width: max-content;
+  margin: 0.5em auto;
+  padding: 0.4em 1em;
+}
+
+#products-link > svg {
+  margin-left: 5px;
+}
+
+#products-link:hover {
+  border: 1px solid var(--accent-color);
+  color: var(--bg-color);
+  background-color: var(--accent-color);
+  transition: var(--transition);
 }
