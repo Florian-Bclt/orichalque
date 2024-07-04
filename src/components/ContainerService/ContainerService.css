@@ -1,15 +1,17 @@
+#services {
+  width: 85vw;
+}
 .service__title {
-  width: 50vw;
   text-align: center;
   margin-top: 2em;
+  font-size: 0.8em;
 }
 .container__service {
-  width: 80vw;
   height: max-content;
   display: flex;
-
   align-items: center;
   margin: 2em 5em 5em 5em;
+  width: 45%;
 }
 
 .container__service .service__list {
@@ -39,7 +41,10 @@
     width: 25em;
   }
   .service__title > h1 {
-    font-size: 2em;
+    font-size: 2.5em;
+    width: 100%;
+    margin: 0;
+    padding: 0;
   }
 
   .container__service {
@@ -59,5 +64,4 @@
   .container__service .service__list > p {
     font-size: 1em;
   }
-  
 }

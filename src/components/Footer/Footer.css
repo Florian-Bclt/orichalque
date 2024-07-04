@@ -1,11 +1,11 @@
 .footer__container {
-  width: 100vw;
+  width: 100%;
   height: max-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 2em;
+  margin: 2em 0;
 }
 .footer__container > a {
   display: flex;
@@ -13,7 +13,7 @@
   align-items:flex-end;
   position: absolute;
   right: 0;
-  margin-top: 18em;
+  margin-top: 20em;
   margin-right: 1em;
   color: #6440a5;
   font-weight: 600;
@@ -32,7 +32,7 @@
 }
 
 .informations {
-  width: 90%;
+  width: 90vw;
   display: flex;
   justify-content: space-between;
 }
@@ -74,12 +74,17 @@
 .informations .legacy {
   display: flex;
   align-items: center;
+  justify-content: end;
 }
 .informations .legacy:hover {
   text-decoration: underline 1px var(--accent-color);
 }
 
 @media screen and (max-width: 650px) {
+  .footer__container {
+    padding: 0;
+    margin: 0;
+  }
   .footer__title > img {
     width: 5em;
   }

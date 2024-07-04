@@ -49,9 +49,10 @@
 }
 
 .container__card .content > img {
-  height: 80%;
-  max-width: 95%;
+  height: 70%;
+  width: auto;
   border-radius: 8px;
+  object-fit: contain;
 }
 
 
@@ -91,6 +92,18 @@
 .swiper-pagination-bullet-active {
   transform: scale(1.5);
   background: var(--accent-color);
+}
+
+/* Responsive Device */
+
+@media screen and (max-width: 1150px) {
+  .container__card {
+    width: 14em;
+  }
+
+  .container__card .content > img {
+    width: 75%;
+  }
 }
 
 @media screen and (max-width: 650px) {

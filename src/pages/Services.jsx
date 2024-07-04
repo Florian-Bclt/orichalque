@@ -1,4 +1,5 @@
 import React from 'react'
+import '../components/ContainerService/ContainerService.css'
 import ContainerService from '../components/ContainerService/ContainerService'
 
 const Services = () => {
