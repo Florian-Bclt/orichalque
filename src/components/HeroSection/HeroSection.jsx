@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react';
 import './HeroSection.css';
 import video from '../../constants/video';
 import { BsFillPlayFill, BsPauseFill } from 'react-icons/bs';
+import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
   const [playVideo, setPlayVideo] = useState(true);
@@ -32,7 +33,7 @@ const HeroSection = () => {
             <h2>Boutique de jeux</h2>
             <h1>L'Orichalque Mangas</h1>
             <h3>La passion du jeu</h3>
-            <button><a href="#services">Découvrir</a></button>
+            <button><Link to='/event'>Découvrir les évènements</Link></button>
           </div>
           <div className="app__video-overlay_circle" onClick={handleVideo}>
             {playVideo 
