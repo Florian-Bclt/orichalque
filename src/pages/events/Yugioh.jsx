@@ -5,7 +5,7 @@ import Footer from '../../components/Footer/Footer';
 
 const Yugioh = () => {
   const dates = [
-    { date: '05 Octobre : Avant première "Rage of The Abysse"', status: '10 places disponibles'},
+    { date: '05 Octobre : Avant première "Rage of The Abysse"', status: '10 places disponibles PAF 25€'},
     { date: '24 Aout - 14:30 :', status: 'Terminé'},
   ]
 
