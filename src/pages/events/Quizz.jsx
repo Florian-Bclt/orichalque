@@ -5,8 +5,8 @@ import Footer from '../../components/Footer/Footer';
 
 const Quizz = () => {
   const dates = [
+    { date: '18/10 à 20h - En duo sur le thème des Disney / Pixar', status: '10 places disponibles'},
     { date: '17/08 - En duo :', status: 'Terminé'},
-    { date: 'A venir', status: ''}
   ]
   
   return (
@@ -20,7 +20,7 @@ const Quizz = () => {
             {dates.map((item, index) => (
               <li
                 key={index}
-                className={`li ${item.status === 'Complet' ? 'full' : 'available'}`}
+                className={`li ${item.status === 'Terminé' ? 'full' : 'available'}`}
               >
                 {item.date} {item.status}
               </li>
