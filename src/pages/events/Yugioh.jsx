@@ -5,7 +5,7 @@ import Footer from '../../components/Footer/Footer';
 
 const Yugioh = () => {
   const dates = [
-    { date: '2024-10-26T14:30', description :'1 playmat à gagner pour le 1er -', status: '10 places disponibles (PAF 15€)'},
+    { date: '2024-10-26T14:30', description :'1 playmat à gagner pour le 1er -', status: '10 places disponibles (PAF 5€)'},
     { date: '2024-10-05T14:30', description :'Avant première "Rage of The Abysse" -', status: '10 places disponibles PAF 25€'},
     { date: '2024-08-24T14:30', description : '', status: 'Terminé'},
   ]
