@@ -47,7 +47,7 @@ const DnD = () => {
 
         <div className="links">
           <a href="https://www.twitch.tv/omeetex/videos" className="twitch">Découvre nos lives réguliers <FaTwitch /></a>
-          <a href="https://www.youtube.com/watch?v=0WH1SiTu8Ps" className="youtube">Regarde nos dernières aventures ! <FaYoutube /></a>
+          <a href="https://www.youtube.com/@LOrichalqueMangasJeux-ke3nq" className="youtube">Regarde nos dernières aventures ! <FaYoutube /></a>
           <a href="https://dnd.wizards.com/fr">En savoir plus sur les règles <FaExternalLinkAlt /></a>
         </div>
       </section>
