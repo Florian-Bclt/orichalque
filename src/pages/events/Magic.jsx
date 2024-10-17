@@ -5,8 +5,14 @@ import Footer from '../../components/Footer/Footer';
 
 const Magic = () => {
   const dates = [
-    { date: 'Vendredi 4 octobre : 18h00 -', status: '10 places disponibles'},
+    { date: '2024-10-04T18:00:00', description: '', status: '10 places disponibles'},
   ]
+
+  const isEventPassed = (eventDate) => {
+    const currentDate = new Date();
+    const eventDateObject = new Date(eventDate);
+    return eventDateObject < currentDate;
+  }
   
   return (
     <>
@@ -16,14 +22,17 @@ const Magic = () => {
         <div className="dates">
           <h3>Dates :</h3>
           <ul>
-            {dates.map((item, index) => (
-              <li
-                key={index}
-                className={`li ${item.status === 'Complet' ? 'full' : 'available'}`}
-              >
-                {item.date} {item.status}
-              </li>
-            ))}
+            {dates.map((item, index) => {
+              const eventPassed = isEventPassed(item.date)
+                return (
+                <li
+                  key={index}
+                  className={`li ${eventPassed ? 'full' : 'available'}`}
+                >
+                  {new Date(item.date).toLocaleDateString('fr-FR', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' })} - {item.description} {eventPassed ? 'Terminé' : item.status}
+                </li>
+                )
+            })}
           </ul>
           <div className='subscribe'>
             <button className='subscribe'>

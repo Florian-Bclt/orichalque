@@ -5,10 +5,16 @@ import Footer from '../../components/Footer/Footer';
 
 const Quizz = () => {
   const dates = [
-    { date: '18/10 à 20h - En duo sur le thème des Disney / Pixar', status: '10 places disponibles'},
-    { date: '17/08 - En duo :', status: 'Terminé'},
+    { date: '2024-10-18T20:00:00', description: '(En duo) Thème : Disney / Pixar -', status: '10 places disponibles'},
+    { date: '2024-08-17T20:00:00', description: '(En duo) Thème : Les mangas -', status: 'Terminé'},
   ]
   
+  const isEventPassed = (eventDate) => {
+    const currentDate = new Date();
+    const eventDateObject = new Date(eventDate);
+    return eventDateObject < currentDate;
+  }
+
   return (
     <>
       <Navbar />
@@ -17,14 +23,17 @@ const Quizz = () => {
         <div className="dates">
           <h3>Dates :</h3>
           <ul>
-            {dates.map((item, index) => (
+            {dates.map((item, index) => {
+              const eventPassed = isEventPassed(item.date)
+              return (
               <li
                 key={index}
-                className={`li ${item.status === 'Terminé' ? 'full' : 'available'}`}
+                className={`li ${eventPassed ? 'full' : 'available'}`}
               >
-                {item.date} {item.status}
+                {new Date(item.date).toLocaleDateString('fr-FR', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' })} - {item.description} {eventPassed ? 'Terminé' : item.status}
               </li>
-            ))}
+              )
+            })}
           </ul>
           <div className='subscribe'>
             <button className='subscribe'>

@@ -5,9 +5,16 @@ import Footer from '../../components/Footer/Footer';
 
 const Yugioh = () => {
   const dates = [
-    { date: '05 Octobre : Avant première "Rage of The Abysse"', status: '10 places disponibles PAF 25€'},
-    { date: '24 Aout - 14:30 :', status: 'Terminé'},
+    { date: '2024-10-26T14:30', description :'1 playmat à gagner pour le 1er -', status: '10 places disponibles (PAF 15€)'},
+    { date: '2024-10-05T14:30', description :'Avant première "Rage of The Abysse" -', status: '10 places disponibles PAF 25€'},
+    { date: '2024-08-24T14:30', description : '', status: 'Terminé'},
   ]
+
+  const isEventPassed = (eventDate) => {
+    const currentDate = new Date();
+    const eventDateObject = new Date(eventDate);
+    return eventDateObject < currentDate;
+  }
 
   return (
     <>
@@ -17,14 +24,17 @@ const Yugioh = () => {
         <div className="dates">
           <h3>Dates :</h3>
           <ul>
-            {dates.map((item, index) => (
-              <li
-                key={index}
-                className={`li ${item.status === 'Terminé' ? 'full' : 'available'}`}
-              >
-                {item.date} {item.status}
-              </li>
-            ))}
+            {dates.map((item, index) => {
+              const eventPassed = isEventPassed(item.date)
+                return(
+                  <li
+                    key={index}
+                    className={`li ${eventPassed ? 'full' : 'available'}`}
+                  >
+                    {new Date(item.date).toLocaleDateString('fr-FR', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' })} - {item.description} {eventPassed ? 'Terminé' : item.status}
+                  </li>
+                )
+            })}
           </ul>
           <div className='subscribe'>
             <button className='subscribe'>
