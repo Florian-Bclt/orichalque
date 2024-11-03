@@ -5,6 +5,7 @@ import Footer from '../../components/Footer/Footer';
 
 const Magic = () => {
   const dates = [
+    { date: '2024-11-08T18:00:00', description: 'Format Modern (PAF : 4€) Lot de boosters de la dernière extension pour le gagnant -', status: '10 places disponibles'},
     { date: '2024-10-04T18:00:00', description: '', status: '10 places disponibles'},
   ]
 
@@ -33,6 +34,9 @@ const Magic = () => {
                 </li>
                 )
             })}
+            <li>
+              Chaque mercredi 15:30 - 17:00 et vendredi 17:30 - 19:00 : Tournoi Magic format Modern (PAF 4€)
+            </li>
           </ul>
           <div className='subscribe'>
             <button className='subscribe'>
